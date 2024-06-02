@@ -47,20 +47,17 @@ public class Exercicio4 extends JFrame {
             }
         });
 
-        // Adiciona o painel principal à janela
         add(contentPane);
     }
 
-    // Método para verificar o tipo do triângulo
+    //  verificando tipo do triangluo
     private void verificarTriangulo() {
         double lado1, lado2, lado3;
 
-        // Obtém os valores dos lados do triângulo a partir dos campos de texto
         lado1 = Double.parseDouble(lado1Field.getText());
         lado2 = Double.parseDouble(lado2Field.getText());
         lado3 = Double.parseDouble(lado3Field.getText());
 
-        // Verifica o tipo do triângulo e exibe o resultado no rótulo
         if (lado1 == lado2 && lado2 == lado3) {
             resultadoLabel.setText("O triângulo é equilátero");
         } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
@@ -70,9 +67,8 @@ public class Exercicio4 extends JFrame {
         }
     }
 
-    // Método principal para executar o programa
     public static void main(String[] args) {
-        // Cria uma instância da classe Exercicio4 e torna a janela visível
+        // instanciando
         new Exercicio4().setVisible(true);
     }
 }
